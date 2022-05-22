@@ -1,4 +1,39 @@
+:root{
+    --f-size:2em;
+}
 *{
     margin:0;
     padding:0;
 }
+#error{
+     margin-top: 10px;
+     margin-left: 10px;
+    --f-size:4em;       
+    font-size: var(--f-size);
+}
+#image{
+    margin: 0 auto;    
+    width: 400px;
+}
+#image >img{
+    object-fit: contain;
+    width: 100%;
+}
+#flex-container{
+    display: flex;
+    /* height: 90vh; */
+    font-size: var(--f-size);
+    text-align: center;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+    #image{
+        width: 100%;
+    }
+    #flex-container{
+        font-size: 110%;
+    }
+  }
